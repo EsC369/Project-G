@@ -30,6 +30,11 @@ app.get('/lottery', (req, res) => {
   res.render('lottery.ejs');
 })
 
+// Scratcher:
+app.get('/scratcher', (req, res) => {
+  res.render('scratcher.ejs');
+})
+
 app.listen(port, () => {
     console.log(`Server Running On port ${port}`);
 })

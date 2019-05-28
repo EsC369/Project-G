@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <link rel="stylesheet" href="./../css/scratcher.css" />
+      <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+      <title>Gambling App Prototype V1.0.0</title>
+  </head>
+<body>
+    <%- include partials/navbar.ejs %>
+  <center>
+
+<div class="container" id="js-container">
+    <canvas class="canvas" id="js-canvas" width="300" height="300"></canvas>
+    <form class="form" style="visibility: hidden;">
+      <h2>'Allo, 'Allo!</h2>
+      <h3>The secret code is:</h3>
+      <h1><code>HlkafSYc</code></h1>
+      <div>
+        <input type="text" name="code" placeholder="Secret Code">
+      </div>
+      <br>
+      <div>
+        <input type="submit" value="Submit">
+      </div>
+    </form>  
+  </div>
+    <script src="./../js/scratcher.js""></script>  
+  </center>
+</body>
+</html>
