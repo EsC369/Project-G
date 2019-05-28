@@ -20,9 +20,14 @@ app.post('/users', (req, res) => {
     res.redirect('/');
 })
 
-//Raffle:
+// Raffle:
 app.get('/raffle', (req, res) => {
   res.render('raffle.ejs');
+})
+
+// Lottery:
+app.get('/lottery', (req, res) => {
+  res.render('lottery.ejs');
 })
 
 app.listen(port, () => {

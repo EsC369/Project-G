@@ -31,10 +31,10 @@ $(document).ready(function(){
 		loadout.css("left","100%");
 		if(users.length < 10){
 			insert_times = 25;
-			duration_time = 20000;
-		}else{
-			insert_times = 60;
 			duration_time = 10000;
+		}else{
+			insert_times = 30;
+			duration_time = 9000;
 		}
 		for(var times = 0; times < insert_times;times++){
 			shuffled = users;

@@ -11,21 +11,24 @@
       crossorigin="anonymous"
     />
     <script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
     <title>Gambling App Prototype V1.0.0</title>
   </head>
   <body>
     <%- include partials/navbar.ejs %>
     <center>
-      <div class="jumbotron">WELCOME TO THE HUSTLE!
-        <br><br>
-      <a href="/raffle" class="btn btn-primary btn-md">Raffle Game</a>
+        <br />
+        <a href="/raffle" class="btn btn-primary btn-md">Raffle Game</a>
+        <br>
+        <br />
+        <a href="/lottery" class="btn btn-info btn-md">Lottery Game</a>
+        <br>
+      <div class="welcome-msg">WELCOME TO THE HUSTLE!</div>
 
-    </div>
-    
+      <%- include partials/register %>
     </center>
-    
   </body>
 </html>

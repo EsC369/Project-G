@@ -1,40 +1,3 @@
-h1 {
-  color: red;
-}
-.roller-width {
-	width: 100%;
-}
-
-text{
-  font-family:Helvetica, Arial, sans-serif;
-  font-size:11px;
-  pointer-events:none;
-}
-#chart{
-  /* position:absolute; */
-  width:500px;
-  height:500px;
-  top:0;
-  left:0;
-}
-#question{
-  /* position: absolute; */
-  width:400px;
-  height:500px;
-  top:0;
-  left:520px;
-}
-#question h1{
-  font-size: 50px;
-  font-weight: bold;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  /* position: absolute; */
-  padding: 0;
-  margin-top: 200;
-  top:50%;
-  -webkit-transform:translate(0,-50%);
-          transform:translate(0,-50%);
-}
 
 /* Raffle system: */
 
@@ -128,7 +91,7 @@ html{
 }
 .badge{
 	padding-top:5px;
-	text-shadow:1px 1px 1px black;
+	text-shadow:1px 1px 1px orangered;
 	margin-bottom:20px;
 }
 .line{
@@ -146,7 +109,7 @@ html{
 	margin-top:30px;
 	text-align:center;
 	font-size:1.5em;
-	color:white;
+	color:orangered;
 	
 }
 #log span{
