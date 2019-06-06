@@ -1,20 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- Font Icon -->
     <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
 
     <!-- Main css -->
     <link rel="stylesheet" href="./../css/style.css" />
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <title>Gambling App Prototype V1.0.0</title>
+  </head>
+  <body>
+    <%- include partials/navbar.ejs %>
+    <center>
+      <div class="welcome-msg">WELCOME TO THE HUSTLE!</div>
 
-    <div class="main">
+      <!-- LOGIN FORM: -->
+      <div class="main">
         <div class="reg-container container">
             <div class="signup-content">
-                <form action="/register" method="POST" id="signup-form" class="signup-form">
-                    <%- include ./errorMsg.ejs %>
-                    <h2>Sign up </h2>
+                <form action="/login" method="POST" id="signup-form" class="signup-form">
+                    <%- include ./partials/errorMsg.ejs %>
+                    <h2>Sign In </h2>
                     <p class="desc">Get a 10% discount on your first - order <span>“Fresh Meat Ticket”</span></p>
                     <div class="form-group">
                         <input type="text" class="form-input" name="name" id="name" placeholder="Your Name"/>
@@ -31,8 +50,9 @@
                         <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree to all statements in  <a href="#" class="term-service">Terms of service</a></label>
                     </div>
                     <div class="form-group">
-                        <input type="submit" name="submit" id="submit" class="form-submit submit" value="Sign up"/>
-                        <a href="/logPage" class="submit-link submit">Sign in</a>
+                        <a href="/" class="submit-link submit">Sign Up</a>
+                        <input type="submit" name="submit" id="submit" class="form-submit submit" value="Sign In"/>
+                        
                     </div>
                 </form>
             </div>
@@ -41,7 +61,7 @@
     </div>
 
     <!-- JS -->
-    <script src="vendor/jquery/jquery.min.js"></script>
     <script src="js/main.js"></script>
-</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+    </center>
+  </body>
 </html>

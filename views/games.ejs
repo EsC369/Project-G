@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Font Icon -->
+    <link
+      rel="stylesheet"
+      href="fonts/material-icon/css/material-design-iconic-font.min.css"
+    />
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="./../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <title>Gambling App Prototype V1.0.0</title>
+  </head>
+  <body>
+    <%- include partials/navbar.ejs %>
+    <center>
+      <div class="container">
+        <h1 class="welcome-msg">Welcome To The Hustle <%= user.name %> ! </h1>
+        <!-- GAMES TABLE -->
+        <h1 style="border-style:solid;border-width:5px;background-color:aqua;">Games Below!: </h1>
+        <table class="table table-dark">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">How Many People</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Raffle Game</td>
+                <td>0</td>
+                <td><a href="/raffle" class="btn btn-primary btn-md">Join Game</a></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Lottery Game</td>
+                <td>0</td>
+                <td><a href="/lottery" class="btn btn-primary btn-md">Join Game</a></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Scratcher Game</td>
+                <td>0</td>
+                <td><a href="/scratcher" class="btn btn-primary btn-md">Join Game</a></td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- END OF GAMES TABLE -->
+          
+        <img style="width:600px;height:300px;"src="/images/samual.gif" alt="Did I Stutter? Mother F***er?!">
+        <h1>
+          Normally, your ass would be dead as fucking fried chicken, but
+          you happen to pull this shit while I'm in a transitional period so I
+          don't wanna kill you, I wanna help you. But I can't give you this
+          case, it don't belong to me. Besides, I've already been through too
+          much shit this morning over this case to hand it over to your dumb
+          ass.
+        <h1/>
+      </div>
+      
+
+
+
+      <br />
+      <br />
+      <br />
+      <!-- JS -->
+      <script src="js/main.js"></script>
+    </center>
+  </body>
+</html>
